@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Duck.cs" />
+    <Compile Include="Ducks.cs" />
     <Compile Include="FlyBehavior.cs" />
     <Compile Include="FlyNoWay.cs" />
     <Compile Include="FlyWithWings.cs" />
@@ -53,6 +54,9 @@
     <Compile Include="Quack.cs" />
     <Compile Include="QuackBehavior.cs" />
     <Compile Include="Squeek.cs" />
+    <Compile Include="Turkey.cs" />
+    <Compile Include="TurkeyAdapter.cs" />
+    <Compile Include="WildTurkey.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

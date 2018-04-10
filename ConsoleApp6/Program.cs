@@ -10,10 +10,29 @@ namespace ConsoleApp6
     {
         static void Main(string[] args)
         {
-            Duck mallard = new MallardDuck();
-            mallard.performFly();
-            mallard.performQuack();
+            MallardDuck duck = new MallardDuck();
+
+            WildTurkey turkey = new WildTurkey();
+            IDucks turkeyAdapter = new TurkeyAdapter(turkey);
+
+            Console.WriteLine("The Turkey says..");
+            turkey.gobble();
+            turkey.fly();
+            Console.WriteLine("");
+
+            Console.WriteLine("The Duck says...");
+            testDuck(duck);
+            Console.WriteLine("");
+
+            Console.WriteLine("The TurkeyAdapter says...");
+            testDuck(turkeyAdapter);
             Console.ReadLine();
+            
+        }
+        static void testDuck(IDucks duck)
+        {
+            duck.quack();
+            duck.fly();
         }
     }
 }

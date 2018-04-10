@@ -6,17 +6,20 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp6
 {
-    public class MallardDuck : Duck
+    public class MallardDuck : IDucks
     {
-        public MallardDuck()
+        void IDucks.fly()
         {
-            this.quackBehavior = new Quack();
-            this.flyBehavior = new FlyWithWings();
+            Console.WriteLine("I'm flying");
         }
 
-        public void display()
+        
+
+        void IDucks.quack()
         {
-            Console.WriteLine("I'm a real Mallard duck");
+            Console.WriteLine("Quack");
         }
+
+        
     }
 }

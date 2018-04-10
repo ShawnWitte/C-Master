@@ -28,6 +28,14 @@ namespace ConsoleApp6
             Console.WriteLine("All ducks float, even decoys!");
         }
 
+        internal void fly()
+        {
+            throw new NotImplementedException();
+        }
 
+        internal void quack()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
